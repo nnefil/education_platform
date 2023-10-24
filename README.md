@@ -59,7 +59,3 @@ The data used in this project comes from three main tables:
 - Identification of highly diligent students based on task completion.
 - Analysis of the effectiveness of a new payment screen through key metrics such as Average Revenue Per User (ARPU) and Conversion Rate (CR).
 - The experimental group showed a significant improvement in all key metrics, suggesting the new payment feature's success.
-
-## Files in this Repository
-
-- `final_project_sql.ipynb`: Jupyter notebook containing SQL queries, results, and comprehensive analysis.
