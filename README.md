@@ -48,22 +48,39 @@ The new payment mechanism showed a positive trend in key financial metrics witho
 
 # SQL Part
 
-## Project Overview
+## Description
 
-The project revolves around the analysis of 'peas,' which are small tasks within the platform's various lessons. Our analysis focuses on identifying diligent students based on their interactions and accomplishments concerning these tasks. We also conducted an experiment to test a new payment screen's effectiveness, analyzing different user metrics before and after its implementation.
+This project involves an in-depth analysis of user behavior and monetization for an educational platform. The platform operates under a trial model, offering students the ability to solve a certain number of problems for free each day, with the option to purchase full access for additional resources. The main focus was on identifying diligent students and assessing the impact of a new payment screen through various key performance indicators.
 
-## Datasets
+## Main Steps
 
-The data used in this project comes from three main tables:
+1. **Identifying Diligent Students**: 
+   - Analyzed user engagement based on the activity in solving small tasks called 'peas'.
+   - Criteria: Students who solved at least 20 peas correctly in the current month.
+   - Utilized data from the `default.peas` table, containing student IDs, timestamps, correctness, and subject information.
 
-1. `default.peas`: Contains data about the 'peas' or tasks that students solve, including timestamps, whether they solved them correctly, and the subject.
+2. **Funnel Optimization Experiment**:
+   - Writing the complex SQL query to calculate key metrics between control and experimental groups, including ARPU, ARPAU, and various conversion rates (CRs).
+   - Analyzed user data from multiple tables: `default.peas`, `default.studs`, and `default.final_project_check`.
 
-2. `default.studs`: Information about the students, including an identifier and the experimental group they belong to.
+## Results
 
-3. `default.final_project_check`: Data concerning purchases made by students, including timestamps, the amount spent, and the subject.
+- **Diligent Students**: 
+  - Identified a total of 136 students meeting the criteria of 'very diligent' based on their performance in solving peas.
 
-## Key Findings
+- **Funnel Optimization**:
+  - The experimental group (pilot) showed significantly better performance across all key metrics compared to the control group.
+  - Improvements in ARPU (Average Revenue Per User) and ARPAU (Average Revenue Per Active User) indicate increased monetization among the experimental group.
+  - Notable increases in conversion rates (both general and active users) suggest that the changes likely had a positive impact on user purchasing behavior.
+ .
 
-- Identification of highly diligent students based on task completion.
-- Analysis of the effectiveness of a new payment screen through key metrics such as Average Revenue Per User (ARPU) and Conversion Rate (CR).
-- The experimental group showed a significant improvement in all key metrics, suggesting the new payment feature's success.
+## Technologies
+
+- **SQL**: Leveraged advanced SQL queries for data extraction and manipulation, ensuring optimization for handling large data volumes.
+- **Database Management**: Engaged with multiple database tables, managing complex joins, and aggregations to derive meaningful insights.
+- **Data Analysis**: Employed various data analysis techniques to interpret key metrics, identifying trends, and making data-driven recommendations.
+
+## Conclusions
+
+The experiment underscored the effectiveness of the new payment screen, demonstrating its impact through enhanced monetization and improved user engagement metrics. The positive outcomes affirm the decision to innovate and emphasize the importance of continual testing and optimization in the educational platform's features for sustained growth and user satisfaction.
+
