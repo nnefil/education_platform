@@ -1,4 +1,4 @@
-# Educational Data Analysis: 
+# Educational Platform Data Analysis project: 
 
  - Python 
  - SQL
@@ -26,11 +26,14 @@ These datasets form the backbone of our A/B testing analysis, providing a compre
 
 The project delves deep into comparison metrics between the two groups, highlighting key performance indicators and user response to the new mechanism. While specific outcomes are detailed within the project, significant findings include:
 
-- **Engagement Metrics**: Differences in how often and how long users interacted with the platform, pointing to shifts in engagement patterns.
-- **Revenue Indicators**: Changes in revenue generation, with a focus on payment frequency, average transaction value, and overall income.
-- **User Experience**: Insights derived from user behavior, potentially reflecting their experience and satisfaction with the new system.
+Changes in convertion rate into paid client, revenue generation, with a focus on payment frequency, average transaction value, and overall income.\
 
-These findings, among others in the project, are instrumental in making an informed decision about the wider implementation of the new payment mechanism.
+## Analise inclides 
+ - EDA
+ - Dealeang with anomalies
+ - Mesuaring and visualisation the key metrics (Total Revenue, ARPU, ARPPU)
+ - Applying statsistical creteria to understand if the is segnificant difference between experimental and control groups
+
 
 ## Technologies
 
