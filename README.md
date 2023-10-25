@@ -7,39 +7,44 @@ This repository contains scripts and analysis for an educational platform. The m
 
 # Python part
 
-## Project Overview
+# A/B Testing Analysis for New Payment Mechanics
 
-This analysis focuses on the results of an A/B test for a new payment mechanism, aiming to identify whether the proposed changes should be adopted across the platform. Through rigorous data analysis and statistical testing, the project offers insights into user behavior and the efficacy of the new system compared to the old one.
+## Description
 
-## Datasets
+This project aims to determine whether a new payment mechanism should be implemented for all users based on the results of A/B testing. We've conducted a thorough analysis of user behavior and response towards the new mechanism, focusing on various critical metrics and user data.
 
-The analysis uses several datasets that include information about user groups, activity, and payments:
+## Main Steps
 
-- `groups.csv`: Data on user group allocation, indicating whether users belong to the control (A) or experimental (B) group.
-- `groups_add.csv`: Additional data on group allocation obtained post-experiment.
-- `active_studs.csv`: Information on users who were active during the testing period.
-- `checks.csv`: Records of transactions made during the experiment.
+1. **Data Preparation:**
+   - Used data from various sources including `groups.csv` for user group segmentation, and additional data like `groups_add.csv`, `active_studs.csv`, and `checks.csv` for comprehensive analysis.
 
-These datasets form the backbone of our A/B testing analysis, providing a comprehensive view of user engagement and interaction with the payment system during the test phase.
+2. **Analysis Tasks:**
+   - Identified key metrics for evaluating the experiment's success.
+   - Conducted a comparative analysis to find statistically significant differences between control and experimental groups.
 
-## Key Findings
+3. **Anomaly Detection:**
+   - Addressed anomalies in the data, such as undistributed students and users with extremely high payments, ensuring they don't skew the results.
 
-The project delves deep into comparison metrics between the two groups, highlighting key performance indicators and user response to the new mechanism. While specific outcomes are detailed within the project, significant findings include:
+4. **Function Implementation:**
+   - Developed functions `key_metrics` for calculating essential metrics and `plot_metrics` for visual representation of the results.
 
-Changes in convertion rate into paid client, revenue generation, with a focus on payment frequency, average transaction value, and overall income.\
+## Results
 
-## Analise inclides 
- - EDA
- - Dealeang with anomalies
- - Mesuaring and visualisation the key metrics (Total Revenue, ARPU, ARPPU)
- - Applying statsistical creteria to understand if the is segnificant difference between experimental and control groups
-
+- The Conversion Rate (CR) remained stable, indicating that the new payment mechanics didn't deter potential customers.
+- There was a significant increase in both Average Revenue Per User (ARPU) and Average Revenue Per Paying User (ARPPU), suggesting a positive impact of the new payment mechanics.
+- Decision made not to consider data from 13 undistributed students and 10 users with anomalously high payments to avoid biased results.
 
 ## Technologies
 
-- **Python**:
-- **Libraries**: Pandas, NumPy, Matplotlib, Seaborn, SciPy
-- **Environment**: Jupyter Notebook
+- **Python:** The primary programming language used for data manipulation, calculation, and analysis.
+- **Pandas:** A fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool.
+- **Matplotlib/Seaborn:** Used for creating static, interactive, and animated visualizations in Python.
+
+
+## Conclusions
+
+The new payment mechanism showed a positive trend in key financial metrics without negatively impacting the user conversion rate. It's crucial, however, to ensure that the increase in revenue outweighs any additional costs related to the implementation of this new system. If the potential profit exceeds these costs, and the assumptions about the anomalies are correct, the recommendation is to proceed with the deployment of the new system into production.
+
 
 # SQL Part
 
