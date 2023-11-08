@@ -31,8 +31,7 @@ This project aims to determine whether a new payment mechanism should be impleme
 ## Results
 
 - The Conversion Rate (CR) remained stable, indicating that the new payment mechanics didn't deter potential customers.
-- Average Revenue Per User (ARPU) shows some growth but we coulnd prof that this increase is statisticaly significant. 
-- There was a significant increase in Average Revenue Per Paying User (ARPPU), suggesting a positive impact of the new payment mechanics.
+- There was a significant increase in both Average Revenue Per User (ARPU) and Average Revenue Per Paying User (ARPPU), suggesting a positive impact of the new payment mechanics.
 
 
 ## Technologies
